@@ -9,7 +9,7 @@ An end-to-end Big Data pipeline built with **Apache Spark** to analyze over 2.25
 | | |
 |---|---|
 | **Goal** | Identify high-risk locations, peak collision times, and primary contributing factors using scalable Big Data tools |
-| **Dataset** | NYC Motor Vehicle Collisions - Crashes (NYC OpenData) - 2.25M records, 2012–2025 |
+| **Dataset** | NYC Motor Vehicle Collisions - Crashes (NYC OpenData) - 2.25M records, 2012-2025 |
 | **Pipeline** | Batch Processing + Spark Structured Streaming |
 | **Framework** | Apache Spark 3.5.0 (PySpark) on Google Colab |
 
@@ -22,7 +22,7 @@ An end-to-end Big Data pipeline built with **Apache Spark** to analyze over 2.25
 | **Name** | Motor Vehicle Collisions - Crashes |
 | **Source** | [NYC OpenData](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data) |
 | **File** | Motor_Vehicle_Collisions_-_Crashes_20260310.csv |
-| **Size** | ~549 MB — 2,247,389 rows × 29 columns |
+| **Size** | ~549 MB - 2,247,389 rows × 29 columns |
 | **Key Fields** | CRASH DATE, BOROUGH, CONTRIBUTING FACTOR, NUMBER OF PERSONS INJURED, LATITUDE/LONGITUDE |
 
 ---
@@ -99,7 +99,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 
 > Brooklyn leads in total crashes and fatalities. However, injury rates are **relatively uniform across all boroughs** (20-30%), suggesting crash severity is not significantly tied to location.
 
-### Trends Over Time (2012–2025)
+### Trends Over Time (2012-2025)
 
 ![Yearly Crash Trend](Yearly%20Crash%20Trend.png)
 
@@ -113,7 +113,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 | 2024 | 65,230 |
 | 2025 | 68,498 |
 
-> Crash counts peaked in **2015** before declining. The **2020 COVID-19 lockdowns** caused the sharpest single-year drop across all boroughs (Queens: −19,198; Brooklyn: −19,007; Manhattan: −15,738). Post-pandemic levels remain significantly lower, with a gradual upward trend emerging in 2024–2025.
+> Crash counts peaked in **2015** before declining. The **2020 COVID-19 lockdowns** caused the sharpest single-year drop across all boroughs (Queens: -19,198; Brooklyn: -19,007; Manhattan: -15,738). Post-pandemic levels remain significantly lower, with a gradual upward trend emerging in 2024-2025.
 
 ### Peak Hours & Location Combinations
 
@@ -160,7 +160,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 
 Sedan (744,630) → Station Wagon/SUV (583,999) → Passenger Vehicle (567,033) → Sport Utility/Station Wagon (248,208) → Taxi (65,520)
 
-> Using only Vehicle 1 would have **undercounted** contributing factors — many multi-vehicle crashes record the primary cause in Vehicles 2–5. UNION ALL across all 5 vehicle columns was essential for accurate results.
+> Using only Vehicle 1 would have **undercounted** contributing factors - many multi-vehicle crashes record the primary cause in Vehicles 2-5. UNION ALL across all 5 vehicle columns was essential for accurate results.
 
 ### Streaming Simulation Results
 
@@ -180,11 +180,11 @@ Sedan (744,630) → Station Wagon/SUV (583,999) → Passenger Vehicle (567,033) 
 
 **1. Brooklyn is the highest-risk borough** by total crash volume (497,094) and fatality count (706), consistent with its population density. However, crash severity is uniform across boroughs.
 
-**2. Driver inattention dominates** as the leading contributing factor (372,902 crashes) — nearly 3× the second-ranked factor, reinforcing the importance of distracted driving campaigns.
+**2. Driver inattention dominates** as the leading contributing factor (372,902 crashes) - nearly 3× the second-ranked factor, reinforcing the importance of distracted driving campaigns.
 
-**3. The 2020 COVID drop was the largest single-year change** across all boroughs, with post-pandemic levels remaining ~40% below 2015 peaks. The gradual upward trend in 2024–2025 warrants continued monitoring.
+**3. The 2020 COVID drop was the largest single-year change** across all boroughs, with post-pandemic levels remaining ~40% below 2015 peaks. The gradual upward trend in 2024-2025 warrants continued monitoring.
 
-**4. Afternoon rush hour (2–6 PM) is the highest-risk window**, with Brooklyn at 4 PM being the single highest-risk borough-hour combination.
+**4. Afternoon rush hour (2-6 PM) is the highest-risk window**, with Brooklyn at 4 PM being the single highest-risk borough-hour combination.
 
 **5. Batch and streaming results were fully consistent**, validating the pipeline architecture.
 
@@ -219,7 +219,7 @@ jupyter notebook Scalable_Processing_of_NYC_Motor_Vehicle_Collision_Data.ipynb
 ```
 
 > **Note:** Parquet output files are not included in this repo as they are
-> generated at runtime. Run the notebook to reproduce them — they will be
+> generated at runtime. Run the notebook to reproduce them - they will be
 > saved automatically to Google Drive under `MyDrive/BigData/output/`:
 > - `borough_summary.parquet`
 > - `yearly_trend.parquet`
