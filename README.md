@@ -97,7 +97,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 | Bronx | 229,544 | 313 | 0.35 |
 | Staten Island | 64,894 | 104 | 0.30 |
 
-> Brooklyn leads in total crashes and fatalities. However, injury rates are **relatively uniform across all boroughs** (20–30%), suggesting crash severity is not significantly tied to location.
+> Brooklyn leads in total crashes and fatalities. However, injury rates are **relatively uniform across all boroughs** (20-30%), suggesting crash severity is not significantly tied to location.
 
 ### Trends Over Time (2012–2025)
 
