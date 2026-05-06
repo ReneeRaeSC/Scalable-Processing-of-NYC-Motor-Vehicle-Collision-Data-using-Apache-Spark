@@ -209,13 +209,14 @@ Sedan (744,630) → Station Wagon/SUV (583,999) → Passenger Vehicle (567,033) 
 ```bash
 # Clone the repository
 git clone https://github.com/ReneeRaeSC/Scalable-Processing-of-NYC-Motor-Vehicle-Collision-Data-using-Apache-Spark.git
-cd NYC-Motor-Vehicle-Collision-Analysis
+cd Scalable-Processing-of-NYC-Motor-Vehicle-Collision-Data-using-Apache-Spark
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the notebook
 jupyter notebook Scalable_Processing_of_NYC_Motor_Vehicle_Collision_Data.ipynb
+```
 
 > **Note:** Parquet output files are not included in this repo as they are
 > generated at runtime. Run the notebook to reproduce them — they will be
@@ -223,7 +224,6 @@ jupyter notebook Scalable_Processing_of_NYC_Motor_Vehicle_Collision_Data.ipynb
 > - `borough_summary.parquet`
 > - `yearly_trend.parquet`
 > - `hourly_pattern.parquet`
-```
 
 > **Note:** This project requires Java (OpenJDK 17) and PySpark 3.5.0. The notebook was developed on Google Colab with the dataset stored in Google Drive.
 
@@ -235,16 +235,16 @@ jupyter notebook Scalable_Processing_of_NYC_Motor_Vehicle_Collision_Data.ipynb
 nyc-collision-analysis/
 │
 ├── README.md
-├── Scalable_Processing_of_NYC_Motor_Vehicle_Collision_Data.ipynb
+├── Scalable Processing of NYC Motor Vehicle Collision Data.ipynb
 ├── requirements.txt
-├── Total_Crashes_by_Borough.png
-├── Yearly_Crash_Trend.png
-├── Crashes_by_hour_of_day.png
-├── Top_10_Contributing_Factors.png
-├── Average_Injuries_per_Crash_by_Borough.png
-├── Fatal_Crashes_per_Borough.png
-└── Year_over_year_Crash_Count_Change_by_Borough.png
-└── data_architecture.png
+├── data_architecture.png
+├── Total Crashes by Borough.png
+├── Yearly Crash Trend.png
+├── Crashes by hour of day.png
+├── Top 10 Contributing Factors.png
+├── Average Injuries per Crash by Borough.png
+├── Fatal Crashes per Borough.png
+└── Year over year Crash Count Change by Borough.png
 ```
 
 ---
