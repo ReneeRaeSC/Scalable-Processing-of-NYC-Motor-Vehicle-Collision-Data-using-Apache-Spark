@@ -172,7 +172,7 @@ Sedan (744,630) → Station Wagon/SUV (583,999) → Passenger Vehicle (567,033) 
 | Bronx | 92,028 | 32,207 |
 | Staten Island | 25,945 | 8,021 |
 
-> Streaming results are **fully consistent** with batch findings — Brooklyn leads across all 5-minute windows, concentrated in afternoon/evening hours. This confirms Spark Structured Streaming as a viable foundation for real-time emergency response dispatch.
+> Streaming results are **fully consistent** with batch findings - Brooklyn leads across all 5-minute windows, concentrated in afternoon/evening hours. This confirms Spark Structured Streaming as a viable foundation for real-time emergency response dispatch.
 
 ---
 
@@ -193,7 +193,7 @@ Sedan (744,630) → Station Wagon/SUV (583,999) → Passenger Vehicle (567,033) 
 ## Limitations & Future Work
 
 **Data Quality Limitations:**
-- ~30–40% of rows had null Borough values, limiting location-based completeness. Recommended fix: automatically derive borough from GPS coordinates to eliminate manual entry gaps
+- ~30-40% of rows had null Borough values, limiting location-based completeness. Recommended fix: automatically derive borough from GPS coordinates to eliminate manual entry gaps
 - High proportion of "Other Vehicular" contributing factors reduces precision of factor analysis
 
 **Future Enhancements:**
@@ -216,6 +216,13 @@ pip install -r requirements.txt
 
 # Run the notebook
 jupyter notebook Scalable_Processing_of_NYC_Motor_Vehicle_Collision_Data.ipynb
+
+> **Note:** Parquet output files are not included in this repo as they are
+> generated at runtime. Run the notebook to reproduce them — they will be
+> saved automatically to Google Drive under `MyDrive/BigData/output/`:
+> - `borough_summary.parquet`
+> - `yearly_trend.parquet`
+> - `hourly_pattern.parquet`
 ```
 
 > **Note:** This project requires Java (OpenJDK 17) and PySpark 3.5.0. The notebook was developed on Google Colab with the dataset stored in Google Drive.
