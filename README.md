@@ -59,7 +59,7 @@ An end-to-end Big Data pipeline built with **Apache Spark** to analyze over 2.25
 | Timestamp creation | Merged `CRASH DATE` + `CRASH TIME` into a single `CRASH_TIMESTAMP` column |
 | Type casting | Injury/kill counts cast to `IntegerType` |
 | Null removal | Dropped rows with nulls in `CRASH_TIMESTAMP`, `BOROUGH`, `NUMBER OF PERSONS INJURED` |
-| Invalid record filtering | Removed negative injury counts and years outside 2012–2025 |
+| Invalid record filtering | Removed negative injury counts and years outside 2012-2025 |
 | **Result** | 2,247,389 → **1,550,033 clean records** (697,356 removed) |
 
 **Data Analysis - Three Approaches**
