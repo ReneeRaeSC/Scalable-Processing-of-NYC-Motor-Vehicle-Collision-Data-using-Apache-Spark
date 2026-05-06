@@ -45,7 +45,7 @@ An end-to-end Big Data pipeline built with **Apache Spark** to analyze over 2.25
 
 ## Methodology
 
-### Part 1 — Batch Processing
+### Part 1 - Batch Processing
 
 **Load & Inspect**
 - Loaded 2,247,389 rows with schema inference
@@ -62,7 +62,7 @@ An end-to-end Big Data pipeline built with **Apache Spark** to analyze over 2.25
 | Invalid record filtering | Removed negative injury counts and years outside 2012–2025 |
 | **Result** | 2,247,389 → **1,550,033 clean records** (697,356 removed) |
 
-**Data Analysis — Three Approaches**
+**Data Analysis - Three Approaches**
 
 | Method | Questions Answered |
 |---|---|
@@ -70,14 +70,14 @@ An end-to-end Big Data pipeline built with **Apache Spark** to analyze over 2.25
 | Spark SQL + UNION ALL | Peak crash hours, top contributing factors across all 5 vehicle columns, borough-hour combinations |
 | Window Functions (`lag()`) | Year-over-year crash count change per borough |
 
-### Part 2 — Structured Streaming
+### Part 2 - Structured Streaming
 
 - Cleaned data was sampled and split into 5 mini-batch CSV files simulating a live feed
 - Streaming query grouped records into **5-minute tumbling windows** per borough
 - Results output to both **console sink** and **memory sink**
 - Aggregated results saved as **Parquet files** to Google Drive
 
-### Part 3 — Visualization
+### Part 3 - Visualization
 
 Four main charts + three appendix charts produced using Matplotlib.
 
