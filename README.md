@@ -87,7 +87,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 
 ### High-Risk Locations
 
-![Total Crashes by Borough](Total_Crashes_by_Borough.png)
+![Total Crashes by Borough](Total%20Crashes%20by%20Borough.png)
 
 | Borough | Total Crashes | Fatal Crashes | Avg Injuries/Crash |
 |---|---|---|---|
@@ -101,7 +101,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 
 ### Trends Over Time (2012–2025)
 
-![Yearly Crash Trend](Yearly_Crash_Trend.png)
+![Yearly Crash Trend](Yearly%20Crash%20Trend.png)
 
 | Year | Crashes |
 |---|---|
@@ -117,7 +117,7 @@ Four main charts + three appendix charts produced using Matplotlib.
 
 ### Peak Hours & Location Combinations
 
-![Crashes by Hour of Day](Crashes_by_hour_of_day.png)
+![Crashes by Hour of Day](Crashes%20by%20hour%20of%20day.png)
 
 | Crash Hour | Crash Count |
 |---|---|
@@ -137,11 +137,11 @@ Four main charts + three appendix charts produced using Matplotlib.
 | Queens | 17 | 29,548 |
 | Queens | 16 | 29,253 |
 
-> Crashes peak between **2–6 PM** (afternoon rush hour). Brooklyn during rush hours is the single highest-risk combination.
+> Crashes peak between **2-6 PM** (afternoon rush hour). Brooklyn during rush hours is the single highest-risk combination.
 
 ### Contributing Factors & Vehicle Types
 
-![Top 10 Contributing Factors](Top_10_Contributing_Factors.png)
+![Top 10 Contributing Factors](Top%2010%20Contributing%20Factors.png)
 
 | Factor | Crash Count |
 |---|---|
@@ -208,7 +208,7 @@ Sedan (744,630) → Station Wagon/SUV (583,999) → Passenger Vehicle (567,033) 
 
 ```bash
 # Clone the repository
-git clone https://github.com/ReneeRaeSC/NYC-Motor-Vehicle-Collision-Analysis.git
+git clone https://github.com/ReneeRaeSC/Scalable-Processing-of-NYC-Motor-Vehicle-Collision-Data-using-Apache-Spark.git
 cd NYC-Motor-Vehicle-Collision-Analysis
 
 # Install dependencies
